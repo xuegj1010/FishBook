@@ -1,6 +1,10 @@
 from flask import Blueprint
 
-web = Blueprint('web', __package__)
+web = Blueprint('web', __name__)
 
 from . import book
-from . import user
+from . import auth
+from . import drift
+from . import gift
+from . import main
+from . import wish
